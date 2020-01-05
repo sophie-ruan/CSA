@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSA</title>
+  <link rel="stylesheet" type="text/css" href="styles/theme1.css" media="all"/>
+  <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="scripts/interactivity.js" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+<div class="header">
+    <img class="banner" id="banner" alt ="banner" src = "images/about/CSAbanner.jpg"/>
+        <nav class="navbar">
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="fam.html">Families</a></li>
+          <li><a href="#">Events</a>
+            <ul id="roomsDropdown" class="nav-Dropdown hidden">
+              <li><a href="events-new.html">New Events</a></li>
+              <li><a href="events-past.html">Past Events</a></li>
+              <li><a href="suggest.html">Suggest Events</a></li>
+            </ul>
+          </li>
+          <li><a href="merch.html">Merchandise</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+<div class="main">
+  <h2>Welcome to Cornell Chinese Students Association!</h2>
+
+        <h3>New Announcements</h3>
+        <div class="announcement">
+        <p>
+          The Spring Festival is coming soon. Feel free to <a href="suggest.html">leave a suggestion here</a> if you have any suggestions on what this year's event is like! Your idea matters!
+        </p>
+        </div>
+</div>
+
+    <div class="calback">
+        <div class="calmain">
+          <table class="calendar">
+            <caption class="calendar__banner--month">
+              <h1>January</h1>
+            </caption>
+            <thead>
+              <tr>
+                <th class="calendar__day__header">Sun</th>
+                <th class="calendar__day__header">Mon</th>
+                <th class="calendar__day__header">Tues</th>
+                <th class="calendar__day__header">Wed</th>
+                <th class="calendar__day__header">Thurs</th>
+                <th class="calendar__day__header">Fri</th>
+                <th class="calendar__day__header">Sat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="calendar__day__cell"></td>
+                <td class="calendar__day__cell"></td>
+                <td class="calendar__day__cell"></td>
+                <td class="calendar__day__cell" data-bank-holiday="New Year">1</td>
+                <td class="calendar__day__cell">2</td>
+                <td class="calendar__day__cell">3</td>
+                <td class="calendar__day__cell">4</td>
+              </tr>
+              <tr>
+                <td class="calendar__day__cell">5</td>
+                <td class="calendar__day__cell">6</td>
+                <td class="calendar__day__cell">7</td>
+                <td class="calendar__day__cell">8</td>
+                <td class="calendar__day__cell">9</td>
+                <td class="calendar__day__cell" data-moon-phase="Full Moon">10</td>
+                <td class="calendar__day__cell">11</td>
+              </tr>
+              <tr>
+                <td class="calendar__day__cell">12</td>
+                <td class="calendar__day__cell">13</td>
+                <td class="calendar__day__cell">14</td>
+                <td class="calendar__day__cell">15</td>
+                <td class="calendar__day__cell">16</td>
+                <td class="calendar__day__cell">17</td>
+                <td class="calendar__day__cell">18</td>
+              </tr>
+              <tr>
+                <td class="calendar__day__cell">19</td>
+                <td class="calendar__day__cell">20</td>
+                <td class="calendar__day__cell" data-bank-holiday="First Day of Class">21</td>
+                <td class="calendar__day__cell">22</td>
+                <td class="calendar__day__cell">23</td>
+                <td class="calendar__day__cell" data-moon-phase="New Moon">24</td>
+                <td class="calendar__day__cell" data-bank-holiday="Lunar New Year">25</td>
+              </tr>
+              <tr>
+                <td class="calendar__day__cell">26</td>
+                <td class="calendar__day__cell">27</td>
+                <td class="calendar__day__cell">28</td>
+                <td class="calendar__day__cell">29</td>
+                <td class="calendar__day__cell">30</td>
+                <td class="calendar__day__cell">31</td>
+                <td class="calendar__day__cell"></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+  </div>
+
+
+
+<div class="contactbar">
+  <div class="contacticon">
+      <p class="contactinfo"><a class="link" href="https://www.facebook.com/CornellCSA/"><img class="icon" id="facebook" alt="facebook" src="images/contact/facebook.png"></a></p>
+      <p class="contactinfo"><a class="link" href="https://twitter.com/cornellcsa?lang=en"><img class="icon" id="twitter" alt="twitter" src="images/contact/twitter.png"></a></p>
+      <p class="contactinfo"><a class="link" href="https://www.instagram.com/cornell_csa/"><img class="icon" id="instagram" alt="instagram" src="images/contact/ins.png"></a></p>
+      <p class="contactinfo"><a class="link" href="mailto:cornellcsa@gmail.com"><img class="icon" id="email" alt="email" src="images/contact/email.png"></a></p>
+  <!-- Source:https://www.iconfinder.com/search/?q=instagram&from=navbar-->
+  <!-- <p class="cite">sourec: www.iconfinder.com</p> -->
+  </div>
+    <div class="question_form">
+      <h3 class="question_title">Join our email list!</h3>
+      <form id="questionform" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+        <div class="formmain"><div class="forminput"><input type="text" id="question" name="question" required/></div>
+        <span class="error_message2 hidden" id="question_error">
+            Please enter in a valid email!
+        </span></div>
+        <div class="submitquestion"> <button type="submit" class="questionbutton">Submit</button>
+        </div>
+      </form>
+    </div>
+</div>
+</body>
+</html>

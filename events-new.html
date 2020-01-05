@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSA</title>
+  <link rel="stylesheet" type="text/css" href="styles/theme1.css" media="all"/>
+  <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="scripts/interactivity.js" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+    <div class="header">
+        <img class="banner" id="banner" alt ="banner" src = "images/about/CSAbanner.jpg"/>
+            <nav class="navbar">
+            <ul id="navbar">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="membership.html">Membership</a></li>
+              <li><a href="fam.html">Families</a></li>
+              <li><a href="#">Events</a>
+                <ul id="roomsDropdown" class="nav-Dropdown hidden">
+                  <li><a href="events-new.html">New Events</a></li>
+                  <li><a href="events-past.html">Past Events</a></li>
+                  <li><a href="suggest.html">Suggest Events</a></li>
+                </ul>
+              </li>
+              <li><a href="merch.html">Merchandise</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+<div class="main">
+<div class="events">
+<h2>New Events</h2>
+<h3>Winter Formal</h3>
+    <img src="images/events/winter-formal.jpg" alt="poster advertising the Winter Formal" class="poster"/>
+    <p>
+        Come celebrate the end of the semester with your favorite club on campus at our ❄️Winter Semi-Formal ❄️! Here's a reason to look your ✨finest and bring your (CSA) family, friends, and children to enjoy an unforgettable night together featuring the best of Cornell dining by 🍸Statler catering 🍸, wholesome 🎁holiday 🎁vibes, and good company 🤩.
+    </p>
+    <p>
+        In addition, CSA Superlatives will be awarded to commend (and roast) our favorite CSA characters. Look out for the nomination form soon to come! We will also be announcing and celebrating the winning fams 🏆for the semester!
+    </p>
+    <ul>
+        <li>WHEN: Saturday 12/7 from 6PM-8PM</li>
+        <li>WHERE: Statler Terrace</li>
+        <li>PRICE: $20</li>
+    </ul>
+    <p>
+        A very exciting sneak peak at the 🔥🔥menu - items will include (but are not limited to):
+    </p>
+        <ul>
+            <li>❄︎ Kale Salad</li>
+            <li>❄︎ Grilled Chicken Punttanesca</li>
+            <li>❄︎ Shrimp and Penne</li>
+            <li>❄︎ Tiramisu</li>
+        </ul>
+</div></div>
+
+<div class="contactbar">
+  <div class="contacticon">
+      <p class="contactinfo"><a class="link" href="https://www.facebook.com/CornellCSA/"><img class="icon" id="facebook" alt="facebook" src="images/contact/facebook.png"></a></p>
+      <p class="contactinfo"><a class="link" href="https://twitter.com/cornellcsa?lang=en"><img class="icon" id="twitter" alt="twitter" src="images/contact/twitter.png"></a></p>
+      <p class="contactinfo"><a class="link" href="https://www.instagram.com/cornell_csa/"><img class="icon" id="instagram" alt="instagram" src="images/contact/ins.png"></a></p>
+      <p class="contactinfo"><a class="link" href="mailto:cornellcsa@gmail.com"><img class="icon" id="email" alt="email" src="images/contact/email.png"></a></p>
+  <!-- Source:https://www.iconfinder.com/search/?q=instagram&from=navbar-->
+  <!-- <p class="cite">sourec: www.iconfinder.com</p> -->
+  </div>
+    <div class="question_form">
+      <h3 class="question_title">Join our email list!</h3>
+      <form id="questionform" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+        <div class="formmain"><div class="forminput"><input type="text" id="question" name="question" required/></div>
+        <span class="error_message2 hidden" id="question_error">
+            Please enter in a valid email!
+        </span></div>
+        <div class="submitquestion"> <button type="submit" class="questionbutton">Submit</button>
+        </div>
+      </form>
+    </div>
+</div>
+</body>
+</html>

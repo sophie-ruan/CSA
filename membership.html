@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSA</title>
+  <link rel="stylesheet" type="text/css" href="styles/theme1.css" media="all"/>
+  <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="scripts/interactivity.js" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <div class="header">
+        <img class="banner" id="banner" alt ="banner" src = "images/about/CSAbanner.jpg"/>
+            <nav class="navbar">
+            <ul id="navbar">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="membership.html">Membership</a></li>
+              <li><a href="fam.html">Families</a></li>
+              <li><a href="#">Events</a>
+                <ul id="roomsDropdown" class="nav-Dropdown hidden">
+                  <li><a href="events-new.html">New Events</a></li>
+                  <li><a href="events-past.html">Past Events</a></li>
+                  <li><a href="suggest.html">Suggest Events</a></li>
+                </ul>
+              </li>
+              <li><a href="merch.html">Merchandise</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+  <div class="main">
+    <h2>Membership</h2>
+
+    <img class="member" src="images/member.jpg" alt="CSA family" />
+
+    <h3>Benefits</h3>
+    <p>If you are a paid member of CSA, you get a membership card that gives you discounts at restaurants all over Collegetown! Participating locations include:</p>
+
+    <table class="table">
+        <tr>
+            <th>Restaurants</th>
+            <th>Discounts</th>
+        </tr>
+        <tr>
+            <td>Utea</td>
+            <td>10% off with cash</td>
+        </tr>
+        <tr>
+            <td>Oishii Bowl</td>
+            <td>10% off with cash</td>
+        </tr>
+
+        <tr>
+            <td>De Tasy</td>
+            <td>10% off with cash</td>
+        </tr>
+
+        <tr>
+            <td>KoKo</td>
+            <td>10% off with cash</td>
+        </tr>
+
+        <tr>
+            <td>Gangnam Station</td>
+            <td>10% off with cash</td>
+        </tr>
+        <tr>
+            <td>Four Seasons</td>
+            <td>10% off with cash</td>
+        </tr>
+        <tr>
+            <td>Miyake</td>
+            <td>8% off with cash on regular priced items</td>
+        </tr>
+        <tr>
+            <td>Plum Tree</td>
+            <td>8% off with cash for dinner only</td>
+        </tr>
+        <tr>
+            <td>Sangnam</td>
+            <td>$25 off or 15% off</td>
+        </tr>
+        <tr>
+            <td>Cafe Pacific</td>
+            <td>10% off with cash on entrees only</td>
+        </tr>
+  </table>
+
+    <h3>Dues</h3>
+    <p>Great power comes with a price...</p>
+    <table class="table">
+        <tr>
+            <th>Member Type</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+          <td>New members</td>
+          <td>$15/year</td>
+        </tr>
+        <tr>
+          <td>Returning members</td>
+          <td>$10/year</td>
+        </tr>
+        <tr>
+          <td>Lifetime membership</td>
+          <td>$30</td>
+        </tr>
+    </table>
+    <p>Please make payment by cash or Venmo to @Cornell-CSA</p>
+  </div>
+
+
+  <div class="contactbar">
+    <div class="contacticon">
+        <p class="contactinfo"><a class="link" href="https://www.facebook.com/CornellCSA/"><img class="icon" id="facebook" alt="facebook" src="images/contact/facebook.png"></a></p>
+        <p class="contactinfo"><a class="link" href="https://twitter.com/cornellcsa?lang=en"><img class="icon" id="twitter" alt="twitter" src="images/contact/twitter.png"></a></p>
+        <p class="contactinfo"><a class="link" href="https://www.instagram.com/cornell_csa/"><img class="icon" id="instagram" alt="instagram" src="images/contact/ins.png"></a></p>
+        <p class="contactinfo"><a class="link" href="mailto:cornellcsa@gmail.com"><img class="icon" id="email" alt="email" src="images/contact/email.png"></a></p>
+    <!-- Source:https://www.iconfinder.com/search/?q=instagram&from=navbar-->
+    <!-- <p class="cite">sourec: www.iconfinder.com</p> -->
+    </div>
+      <div class="question_form">
+        <h3 class="question_title">Join our email list!</h3>
+        <form id="questionform" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+          <div class="formmain"><div class="forminput"><input type="text" id="question" name="question" required/></div>
+          <span class="error_message2 hidden" id="question_error">
+              Please enter in a valid email!
+          </span></div>
+          <div class="submitquestion"> <button type="submit" class="questionbutton">Submit</button>
+          </div>
+        </form>
+      </div>
+  </div>
+  </body>
+  </html>
