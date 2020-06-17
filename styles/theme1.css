@@ -249,11 +249,14 @@ h3{
   color: grey;
 }
 /* Contact Bar */
-.contactbar{
+.footer{
   background-color: #b63232;
   color: white;
-  padding-top: 8px;
-  padding-left: 14px;
+  flex-wrap: wrap;
+}
+.contactbar{
+    width: 70%;
+    margin: 0 auto;
 }
 .error_message2{
   display: inline-block;
@@ -266,7 +269,6 @@ h3{
 }
 .forminput{
   flex-wrap: nowrap;
-  width: 400px;
 }
 #questionform{
   display: flex;
@@ -274,12 +276,12 @@ h3{
 }
 .question_form{
   display:inline-block;
-  padding-left: 300px;
-  width: 40%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .contacticon{
   display:inline-block;
-  padding-left: 50px;
+  padding: 20px 20px 0px 20px;
 }
 .submitquestion{
   display:inline-block;
@@ -296,8 +298,8 @@ h3{
   color: white;
 }
 .contactinfo{
-  padding-left: 40px;
   display: inline-block;
+  padding: 20px;
 }
 .ename{
   font-size: 130%;
@@ -373,6 +375,8 @@ input, textarea {
   border: 1px solid #aa481f;
   font-family: "Gotham", sans-serif;
   font-size: 14px;
+  height: 35px;
+  z-index: 1;
 }
 
 .order_item {
@@ -469,121 +473,9 @@ th, td {
   margin-left: 20px;
 }
 
-.calback {
-  color: #4E4F4A;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Montserrat';
-  font-weight: 700;
-  min-height: 100vh;
-  padding-bottom: 40px;
-  padding-top: 40px
-}
-
-.calmain {
-  background-color: #F6E9DC;
-  -ms-flex-preferred-size: 980px;
-      flex-basis: 980px;
-  padding: 0px 20px 20px 20px;
-}
-
-.calendar {
-  /* table-display: fixed; */
-  width: 100%;
-}
-
-.calendar__day__header,
-.calendar__day__cell {
-  border: 2px solid #e66053;
-  text-align: center;
-  width: 100% / 7;
-  vertical-align: middle;
-}
-
-.calendar__day__header,
-.calendar__day__cell {
-  padding: .75rem 0 1.5rem;
-}
-
-.calendar__banner--month {
-  text-align: center;
-  padding: .75rem;
-}
-.calendar__banner--month h1 {
-  background-color: #4E4F4A;
-  color: #F6E9DC;
-  display: inline-block;
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  padding: .5rem 2rem;
-  text-transform: uppercase;
-}
-
-.calendar__day__header {
-  font-size: 1rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.calendar__day__cell {
-  font-size: 4rem;
-  position: relative;
-}
-
-tr:nth-child(odd) > .calendar__day__cell:nth-child(odd) {
-  color: #e66053;
-}
-
-tr:nth-child(even) > .calendar__day__cell:nth-child(even) {
-  color: #e66053;
-}
-
-.calendar__day__cell[data-bank-holiday] {
-  background-color: #e66053;
-  color: #F6E9DC;
-}
-.calendar__day__cell[data-bank-holiday]:after {
-  content: attr(data-bank-holiday);
-  color: #F6E9DC;
-  display: block;
-  font-weight: 400;
-  font-size: .75rem;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 1rem;
-  text-transform: uppercase;
-}
-
-.calendar__day__cell[data-moon-phase] {
-  color: #F6E9DC;
-  background-color: #4E4F4A;
-  border-color: #4E4F4A;
-}
-.calendar__day__cell[data-moon-phase]:after {
-  content: attr(data-moon-phase);
-  color: #F6E9DC;
-  display: block;
-  font-size: .75rem;
-  font-weight: 400;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 1rem;
-  text-transform: uppercase;
-}
-
 
 /* mobile */
-@media (max-width: 600px){
+@media (max-width: 415px){
 
   .logo{
     display: none;
@@ -791,5 +683,26 @@ tr:nth-child(even) > .calendar__day__cell:nth-child(even) {
     width: 100%;
     padding-bottom: 60px;
   }
+
+.contactbar{
+    width:100%;
+}
+
+.contactinfo{
+    display:inline-block;
+    padding: 10px;
+}
+
+.question_form {
+    width: 90%;
+}
+
+.formmain{
+    width: 70%;
+}
+
+.submitquestion{
+    width: 20%;
+}
 
 }
