@@ -17,6 +17,7 @@ h3{
   font-weight: 500;
   color: #ad3727;
 }
+
 .main{
     padding-top: 60px;
     padding-left: 10%;
@@ -46,56 +47,30 @@ h3{
   margin-right: auto;
 }
 
-.navbar{
-    margin-top: 10px;
-}
-
 .navbar ul {
-  list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #b63232;
-  padding-left: 120px;
   font-weight: bold;
 }
 
 .navbar li {
-  float: left;
-  margin-right: 17px;
+    float: left;
+    padding:20px;
 }
 
 .navbar li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 35px;
   text-decoration: none;
 }
-.nav{
-  display: flex;
-  flex-direction: row;
-}
-.navimg{
-  display: inline-block;
-  padding-left: 120px;
-}
-.navmain{
-  display: inline-block;
-}
-.logo img{
-  height: 50px;
-  width: 50px;
-}
-.logo{
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.logo a{
-  width: 58px;
-  padding: 0px;
-  margin: 0px;
-}
+
 .navbar li a:hover{
     text-decoration: underline;
 }
@@ -270,12 +245,11 @@ h3{
   padding-right: 20px;
 }
 .contacticon{
-  display:inline-block;
+  display: inline-block;
   padding: 20px 20px 0px 20px;
 }
 .submitquestion{
   display:inline-block;
-  padding-left: 20px;
 }
 .question_title{
     color: white;
@@ -466,9 +440,45 @@ th, td {
     display: block;
 }
 
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #navbar{
+    display: block;
+}
+
 
 /* mobile */
 @media (max-width: 415px){
+
+    nav ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    nav li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+        color: white;
+        font-weight: bold;
+    }
 
   .logo{
     display: none;
@@ -544,7 +554,7 @@ th, td {
     height:auto;
     padding-left: 0px;
   }
-
+/*
   .navbar{
     margin-top: 0px;
     display: flex;
@@ -565,14 +575,14 @@ th, td {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
+  } */
 
   .navbar li {
     float: left;
-    margin-right: 17px;
+    padding-top: 10px;
   }
 
-  .navbar li a {
+  /* .navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -582,7 +592,7 @@ th, td {
   .nav{
     display: flex;
     flex-direction: column;
-  }
+  }  */
   /* .navimg{
     display: inline-block;
     padding-left: 0px;
@@ -604,25 +614,13 @@ th, td {
   .homehidden:hover{
     text-decoration: underline;
   }
-  .logo img{
-    height: 50px;
-    width: 50px;
-  }
-  .logo{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .logo a{
-    width: 58px;
-    padding: 0px;
-    margin: 0px;
-  }
+
   .navbar li a:hover{
       text-decoration: underline;
   }
 
   /* dropdown */
-  .navbar ul ul {
+  /* .navbar ul ul {
   	display: none;
   	position: absolute;
     padding: 0px;
@@ -635,7 +633,7 @@ th, td {
   	display:list-item;
   	position: relative;
     margin-right: 0px;
-  }
+  } */
 
   .aboutimg{
     width:280px;
@@ -685,14 +683,6 @@ th, td {
 
 .question_form {
     width: 90%;
-}
-
-.formmain{
-    width: 70%;
-}
-
-.submitquestion{
-    width: 20%;
 }
 
 .container{
